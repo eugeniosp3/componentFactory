@@ -1,6 +1,6 @@
 # React Component Factory
 
-Welcome my Component Factory repository! This project provides a collection of reusable components that you can use to build your web applications more efficiently. I am making this for fun but also to improve my dev skills. I want to add more as I have time, but please feel free to take them and remix them.
+Welcome to my Component Factory repository! This project provides a collection of reusable components that you can use to build your web applications more efficiently. I am making this for fun but also to improve my dev skills. I want to add more as I have time, but please feel free to take them and remix them.
 
 You can explore and play with live demos of these components at [https://component-factory-five.vercel.app/](https://component-factory-five.vercel.app/).
 
