@@ -67,4 +67,4 @@ Please follow the project's code of conduct and contribution guidelines.
 
 ## License
 
-Specify the license of your project here (e.g., MIT, Apache 2.0, etc.).
+It's free... for now ;)
