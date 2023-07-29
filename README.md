@@ -34,6 +34,9 @@ Note: URLS need to be updated for you to reach the Live Demo URL
 | Sliders | Select a value from a range with interactive sliders |
 | Dropdown Menus | Display a list of options when clicked or hovered |
 
+![LinkedIn Image](https://media.licdn.com/dms/image/D5622AQGsrOpRV8u_zg/feedshare-shrink_800/0/1690669976447?e=1693440000&v=beta&t=eLt3ZUUfmt-fZU6VK4vuoKC7BgMjICcfi-i0LL1LXTU)
+
+
 ## Installation
 
 1. Clone the repository:
