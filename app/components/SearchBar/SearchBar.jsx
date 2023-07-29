@@ -124,7 +124,7 @@ function SearchBar() {
           <div id="searchBar" ref={searchBarRef} className="bg-blue-100 rounded-b-lg w-10/12 max-h-48 absolute px-4 py-2 ease-in-out duration-300 overflow-scroll">
             {filteredAccounts.length === 0 ? (
             <div className="py-2 px-6 flex items-start text-black/30">No matching accounts found</div>
-          ) : (filteredAccounts.map((items) => <div className="hover:w-full hover:rounded-lg py-2 px-6 hover:bg-blue-300/30  ease-in-out duration-150" key={items.name}>
+          ) : (filteredAccounts.map((items) => <div key={items.name} className="hover:w-full hover:rounded-lg py-2 px-6 hover:bg-blue-300/30  ease-in-out duration-150">
                 <div className="flex flex-row items-center py-2">
                 <Image src={items.image} width={40} height={40} />
                 <p className="px-4">{items.name}</p></div>
