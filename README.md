@@ -15,6 +15,7 @@ You can explore and play with live demos of these components at [https://compone
 ## Components
 
 Here is a list of the 15 components available in this project:
+Note: URLS need to be updated for you to reach the Live Demo URL
 
 | Component Name | Description                                                   | Live Demo URL                                                   |
 | -------------- | ------------------------------------------------------------- | --------------------------------------------------------------- |
