@@ -37,17 +37,17 @@ Note: URLS need to be updated for you to reach the Live Demo URL
 ## Installation
 
 1. Clone the repository:
-   git clone https://github.com/eugeniosp3/componentFactory.git
-   cd project
+   <br>git clone https://github.com/eugeniosp3/componentFactory.git
+   <br>cd project
 
 2. Install dependencies:
-   npm install
+   <br>npm install
 
 3. Run the project:
-   npm start
+   <br>npm start
 
 4. Open the app:
-   Once the development server is running, visit [http://localhost:3000](http://localhost:3000) in your browser.
+   <br>Once the development server is running, visit [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## Usage
 
