@@ -1,5 +1,6 @@
 import React from 'react'
 import Accordion from '../components/Accordion/Accordion'
+import SearchBar from '../components/SearchBar/SearchBar'
 
 function AllComponents() {
   return (
@@ -37,16 +38,15 @@ function AllComponents() {
 {/* insert another here */}
      <div className="py-4 lg:w-1/2 w-11/12">
         <p className="font-medium pt-8 pb-2 select-none">
-        <a className="text-black/30 hover:text-slate-800 ease-in-out duration-1000" href="https://github.com/eugeniosp3/componentFactory/tree/main/app/components/Accordion">
-            Accordion
+        <a className="text-black/30 hover:text-slate-800 ease-in-out duration-1000" href="https://github.com/eugeniosp3/componentFactory/tree/main/app/components/SearchBar">
+            Search Bar
             </a>
         </p> 
       </div>
 
       <div className="w-screen flex flex-col items-center justify-center">
         
-     <Accordion />
-     <Accordion />
+     <SearchBar />
      </div>
 
 
