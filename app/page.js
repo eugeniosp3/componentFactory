@@ -4,7 +4,7 @@ import { LuCodesandbox } from "react-icons/lu";
 
 export default function Home() {
   return (
-    <div className="mx-auto flex flex-row">
+    <div className="mx-auto flex flex-rowl h-screen w-screen overflow-auto">
       <div className="bg-sky-400 w-44 h-screen flex flex-col items-center justify-start py-6 text-gray-100">
       <LuCodesandbox size={80} className="text-9xl mb-4 "/>
 
