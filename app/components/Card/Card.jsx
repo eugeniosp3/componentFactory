@@ -5,7 +5,7 @@ import React from 'react'
 function Card({title, header, bodyText, titleColor, headerColor, bodyTextColor, imgSource}) {
   return (
     <div
-      className="h-80 first:rounded-l-xl last:rounded-r-xl
+      className="h-80 first:rounded-l-xl last:rounded-r-xl xxs:max-md:first:rounded-t-xl xxs:max-md:last:rounded-b-xl first:rounded-l-none last:rounded-r-none
       xxs:w-11/12 xs:w-11/12 sm:w-11/12 md:w-11/12 lg:w-5/6 xl:w-3/5 2xl:w-1/2
       xxs:bg-pink-300 xs:bg-slate-300 sm:bg-orange-300 md:bg-sky-300 lg:bg-stone-300 xl:bg-green-300 2xl:bg-teal-300
       flex flex-row gap-6 items-center justify-center ease-in-out duration-700 

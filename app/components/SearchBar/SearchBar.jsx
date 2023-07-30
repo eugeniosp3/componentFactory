@@ -4,10 +4,10 @@ import React, { useEffect, useRef, useState } from 'react';
 import { LuSearch } from 'react-icons/lu';
 
 function SearchBar() {
-  const [dropSearch, setDropSearch] = useState(false);
+  const [dropSearch, setDropSearch] = useState(true);
   const searchBarRef = useRef(null);
   const [inputValue, setInputValue] = useState("");
-  const [searchResults, setSearchResults] = useState([]);
+  const [searchResults, setSearchResults] = useState('');
 
   const searchItems = { 
     "accounts": [
@@ -73,7 +73,8 @@ function SearchBar() {
 
   useEffect(() => {
     const handleClickOutside = (event) => {
-      if (!event.target.closest("searchBar")) {
+      const searchBarElement = document.getElementById("searchBar");
+      if (searchBarElement && !searchBarElement.contains(event.target)) {
         setDropSearch(false);
       }
     };
@@ -84,10 +85,12 @@ function SearchBar() {
       document.removeEventListener('mousedown', handleClickOutside);
     };
   }, []);
+  
 
 
   const handleInputChange = (event) => {
     setInputValue(event.target.value);};
+
 
     const filteredAccounts = searchItems.accounts.filter((item) =>
     item.name.toLowerCase().includes(inputValue.toLowerCase())
@@ -97,9 +100,17 @@ function SearchBar() {
     setDropSearch(!dropSearch);
   };
 
+  const handleSearchSelect = (someValue) => {
+    setSearchResults(someValue);
+    setDropSearch(false);
+  }
+
+
+  
+
   return (
     <div
-      className="h-16 rounded-xl
+      className="h-72 rounded-xl
       flex items-center justify-start flex-col py-2
       xxs:w-11/12 xs:w-11/12 sm:w-11/12 md:w-11/12 lg:w-1/2 xl:w-1/2 2xl:w-1/2
       xxs:bg-pink-300 xs:bg-slate-300 sm:bg-orange-300 md:bg-sky-300 lg:bg-stone-300 xl:bg-green-300 2xl:bg-teal-300
@@ -109,23 +120,26 @@ function SearchBar() {
     >
       <div className="sticky w-3/4">
         <input
-          className={`w-10/12 h-12 px-2 outline-none flex items-center justify-center relative ease-out duration-150 ${
+        ref={searchBarRef}
+          className={`w-full h-12 px-2 outline-none flex items-center justify-center relative ease-out duration-150 ${
             dropSearch ? 'rounded-t-lg' : 'rounded-lg'
           } bg-zinc-100 `}
           onMouseDown={handleInputClick}
           onClick={() => setDropSearch(true)}
-          placeholder={"Search"}
+          placeholder={searchResults ? searchResults : "Search for an account"}
           onChange={handleInputChange}
           value={inputValue}
         />
 
+
 {/*  bar that drops down --------- */}
         {dropSearch ? (
-          <div id="searchBar" ref={searchBarRef} className="bg-blue-100 rounded-b-lg w-10/12 max-h-48 absolute px-4 py-2 ease-in-out duration-300 overflow-scroll">
+          <div id="searchBar" ref={searchBarRef} className="bg-blue-100 rounded-b-lg w-full max-h-52 absolute px-4 py-2 ease-in-out duration-300 overflow-scroll">
             {filteredAccounts.length === 0 ? (
             <div className="py-2 px-6 flex items-start text-black/30">No matching accounts found</div>
-          ) : (filteredAccounts.map((items) => <div key={items.name} className="hover:w-full hover:rounded-lg py-2 px-6 hover:bg-blue-300/30  ease-in-out duration-150">
-                <div className="flex flex-row items-center py-2">
+  ) : (filteredAccounts.map((items) => <div key={items.name} onClick={() => handleSearchSelect(items.name)} className="hover:w-full hover:rounded-lg py-2 px-6 hover:bg-blue-300/30  ease-in-out duration-150">
+                <div className="flex flex-row items-center py-2" 
+>
                 <Image src={items.image} width={40} height={40} />
                 <p className="px-4">{items.name}</p></div>
 
@@ -152,6 +166,7 @@ function SearchBar() {
           </div>
         ) : null}
       </div>
+      <p className="py-10">I'm broke again! ...according to {searchResults}!</p>
     </div>
   );
 }

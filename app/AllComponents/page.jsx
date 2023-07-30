@@ -74,7 +74,7 @@ function AllComponents() {
         </p> 
       </div>
 
-      <div className="w-11/12 flex flex-row items-center justify-center">
+      <div className="w-11/12 flex flex-row items-center justify-center xxs:max-md:flex-col">
         <Card title={"Desert Rentals"}
               header={"Luxurious Sand Castles"}
               bodyText={"The most diversity is not found in the city, but in the desert."}

@@ -35,7 +35,7 @@ const handleClickLink = (index) => {
       ">
         {/* holds menu items */}
         <div className="gap-5 text-sm border-b-2 border-b-blue-100/50 bg-slate-800 border backdrop-blur-2xl shadow-md shadow-black/30 rounded-lg
-        flex items-center justify-center w-11/12 xxs:max-md:text-xs/[13px] xxs:max-md:flex-2 xxs:max-md:w-11/12 xxs:max-md: xxs:max-md:gap-3 md:whitespace-nowrap
+        flex items-center justify-center w-11/12 xxs:max-md:text-xs/[1em] xxs:max-md:flex-2 xxs:max-md:w-11/12 xxs:max-md: xxs:max-md:gap-4 xxs:max-md:px-2 md:whitespace-nowrap
       
         ">
                 {links.map((link, index) => (
