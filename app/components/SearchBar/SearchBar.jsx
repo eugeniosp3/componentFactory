@@ -111,7 +111,7 @@ function SearchBar() {
         <input
           className={`w-10/12 h-12 px-2 outline-none flex items-center justify-center relative ease-out duration-150 ${
             dropSearch ? 'rounded-t-lg' : 'rounded-lg'
-          }`}
+          } bg-zinc-100 `}
           onMouseDown={handleInputClick}
           onClick={() => setDropSearch(true)}
           placeholder={"Search"}

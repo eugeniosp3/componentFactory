@@ -27,7 +27,7 @@ function Accordion({header, badge}) {
                          onClick={() => setOpen(!open)}
                          >
                         <div className="flex items-center justify-center">
-                            <p className="text-lg select-none text-gray-800">Accounts</p>
+                            <p className="text-lg select-none text-cyan-950">Accounts</p>
                             <div className="flex items-center justify-center
                              border-solid border border-red-600 rounded-lg
                               bg-red-100/50 px-3 ml-4 h-6">
