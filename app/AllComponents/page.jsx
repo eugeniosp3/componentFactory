@@ -2,6 +2,7 @@ import React from 'react'
 import Accordion from '../components/Accordion/Accordion'
 import SearchBar from '../components/SearchBar/SearchBar'
 import NavBar from '../components/NavBar/NavBar'
+import Card from '../components/Card/Card'
 
 function AllComponents() {
   return (
@@ -37,7 +38,7 @@ function AllComponents() {
      </div>
 
 {/* insert another here */}
-     <div className="py-4 lg:w-1/2 w-11/12">
+     <div className="py-4 lg:w-1/2 w-11/12 mt-10">
         <p className="font-medium pt-8 pb-2 select-none">
         <a className="text-black/30 hover:text-slate-800 " href="https://github.com/eugeniosp3/componentFactory/tree/main/app/components/SearchBar">
             Search Bar
@@ -53,7 +54,7 @@ function AllComponents() {
 
      {/* insert another here */}
      <div className="py-4 lg:w-1/2 w-11/12 mt-20">
-        <p className="font-medium pt-8 pb-2 select-none">
+        <p className="font-medium pt-6 pb-2 select-none">
         <a className="text-black/30 hover:text-slate-800 " href="https://github.com/eugeniosp3/componentFactory/tree/main/app/components/NavBar">
             Horizontal Nav Bar
             </a>
@@ -64,7 +65,44 @@ function AllComponents() {
         <NavBar />
      </div>
 
+        {/* insert another here */}
+        <div className="py-4 lg:w-1/2 w-11/12 mt-20">
+        <p className="font-medium pb-2 select-none">
+        <a className="text-black/30 hover:text-slate-800 " href="https://github.com/eugeniosp3/componentFactory/tree/main/app/components/NavBar">
+            Animated Cards
+            </a>
+        </p> 
+      </div>
 
+      <div className="w-11/12 flex flex-row items-center justify-center">
+        <Card title={"Desert Rentals"}
+              header={"Luxurious Sand Castles"}
+              bodyText={"The most diversity is not found in the city, but in the desert."}
+              titleColor={`text-orange-800`}
+              headerColor={`text-amber-600`}
+              bodyTextColor={`text-slate-500`}
+              imgSource={`/cooldesertcity.jpeg`}
+              />
+        <Card title={"Cloud City"}
+              header={"Magnificent Heights"}
+              bodyText={"You buy a helicopter tour but instead you get a flying car."}
+              titleColor={`text-sky-500`}
+              headerColor={`text-orange-500`}
+              bodyTextColor={`text-sky-700`}
+              imgSource={`/futurecar.jpeg`}
+
+              />
+        <Card title={"Fantasy Trips"}
+              header={"Roaming Candy Fields"}
+              bodyText={"Go to a land undiscovered. Unbound by reality's rules."}
+              titleColor={`text-pink-400`}
+              headerColor={`text-lime-600`}
+              bodyTextColor={`text-gray-400`}
+              imgSource={`/pinkyClouds.jpeg`}
+
+              />
+
+     </div>
 
      </div>
   )
