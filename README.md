@@ -17,7 +17,7 @@ You can explore and play with live demos of these components at [https://compone
 Here is a list of the 15 components available in this project:
 | Component Name | Description | Status |
 | -------------- | ------------------------------------------------------------- | ------ |
-| Accordion | A collapsible content container for space-saving UI | Done |
+| Accordion | A collapsible content container for space-saving UI |Done|
 | Navbar | Navigation component with links for easy app navigation | Done  |
 | Search Bar | Component for user-friendly search functionality | Done |
 | Modal | Popup dialog for displaying additional information |  |
