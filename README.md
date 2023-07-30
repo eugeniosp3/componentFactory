@@ -15,24 +15,24 @@ You can explore and play with live demos of these components at [https://compone
 ## Components
 
 Here is a list of the 15 components available in this project:
-Note: URLS need to be updated for you to reach the Live Demo URL
-| Component Name | Description |
-| -------------- | ------------------------------------------------------------- |
-| Accordion | A collapsible content container for space-saving UI |
-| Navbar | Navigation component with links for easy app navigation |
-| Search Bar | Component for user-friendly search functionality |
-| Modal | Popup dialog for displaying additional information |
-| Carousel | Rotating content display for showcasing featured items |
-| Tabs | Navigation component for switching between content views |
-| Form Inputs | Reusable components for various types of form inputs |
-| Button | Versatile button components with different styles |
-| Alerts | Display success messages, errors, or warnings to users |
-| Loader/Spinner | Indicate loading or processing with animated spinners |
-| Pagination | Break down large lists of data into smaller, paginated chunks |
-| Tooltip | Show additional information when hovering over an element |
-| Card | Flexible component to display information or content |
-| Sliders | Select a value from a range with interactive sliders |
-| Dropdown Menus | Display a list of options when clicked or hovered |
+| Component Name | Description | Status |
+| -------------- | ------------------------------------------------------------- | ------ |
+| Accordion | A collapsible content container for space-saving UI | Done |
+| Navbar | Navigation component with links for easy app navigation | Done  |
+| Search Bar | Component for user-friendly search functionality | Done |
+| Modal | Popup dialog for displaying additional information |  |
+| Carousel | Rotating content display for showcasing featured items |  |
+| Tabs | Navigation component for switching between content views |  |
+| Form Inputs | Reusable components for various types of form inputs |  |
+| Button | Versatile button components with different styles |  |
+| Alerts | Display success messages, errors, or warnings to users |  |
+| Loader/Spinner | Indicate loading or processing with animated spinners |  |
+| Pagination | Break down large lists of data into smaller, paginated chunks |  |
+| Tooltip | Show additional information when hovering over an element |  |
+| Card | Flexible component to display information or content | Done  |
+| Sliders | Select a value from a range with interactive sliders |  |
+| Dropdown Menus | Display a list of options when clicked or hovered |  |
+
 
 ![LinkedIn Image](https://media.licdn.com/dms/image/D5622AQGsrOpRV8u_zg/feedshare-shrink_800/0/1690669976447?e=1693440000&v=beta&t=eLt3ZUUfmt-fZU6VK4vuoKC7BgMjICcfi-i0LL1LXTU)
 
