@@ -8,7 +8,7 @@ const links = [
 
     "Power Rangers",
     "Futurama",
-    "Schitt&apos;s Creek",
+    "Schitt&#39;s Creek",
     "The Office",
     "The Simpsons",
     "The Ultimate Fighter",
