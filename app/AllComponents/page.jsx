@@ -54,7 +54,7 @@ function AllComponents() {
      {/* insert another here */}
      <div className="py-4 lg:w-1/2 w-11/12 mt-20">
         <p className="font-medium pt-8 pb-2 select-none">
-        <a className="text-black/30 hover:text-slate-800 " href="https://github.com/eugeniosp3/componentFactory/tree/main/app/components/SearchBar">
+        <a className="text-black/30 hover:text-slate-800 " href="https://github.com/eugeniosp3/componentFactory/tree/main/app/components/NavBar">
             Horizontal Nav Bar
             </a>
         </p> 
