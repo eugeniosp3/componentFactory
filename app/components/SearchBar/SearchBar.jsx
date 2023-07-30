@@ -166,7 +166,7 @@ function SearchBar() {
           </div>
         ) : null}
       </div>
-      <p className="py-10 text-sm text-slate-800">I'm broke again! ...according to {searchResults}!</p>
+      <p className="py-10 text-sm text-slate-800">I&apos;m broke again! ...according to {searchResults}!</p>
     </div>
   );
 }
